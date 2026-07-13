@@ -23,7 +23,7 @@ if st.button("답변 받기"):
         with st.spinner("Gemini가 생각하는 중..."):
             try:
                 # 3. Gemini 모델 로드 및 답변 생성 (가장 기본적이고 안정적인 gemini-2.5-flash 모델 사용)
-                model = genai.GenerativeModel("gemini-2.5-flash")
+                model = genai.GenerativeModel("models/gemini-2.5-flash")
                 response = model.generate_content(user_question)
                 
                 # 4. 결과 출력
